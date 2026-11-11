@@ -15,14 +15,38 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col gap-4 md:pl-8">
-            <h1 className="text-4xl font-bold text-black dark:text-white">
-              Negar Nobakhti
-            </h1>
-            <p className="text-lg text-black dark:text-white">
+            <h1 className="text-4xl font-bold">Negar Nobakhti</h1>
+            <p className="text-lg">
               I am a software engineer with a passion for building web
               applications. I have experience in full-stack development and
               enjoy working with modern web technologies.
             </p>
+          </div>
+        </div>
+        {/* work experiences */}
+        <div className="flex flex-col items-start justify-center w-full gap-4 mt-8">
+          <h2 className="text-2xl font-bold">Work Experience</h2>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Software Engineer</h3>
+              <p className="text-sm text-gray-400">
+                Company A | Jan 2020 - Present
+              </p>
+              <p className="text-sm">
+                Worked on developing and maintaining web applications using
+                React and Node.js.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Frontend Developer</h3>
+              <p className="text-sm text-gray-400">
+                Company B | Jun 2018 - Dec 2019
+              </p>
+              <p className="text-sm">
+                Focused on building responsive user interfaces with HTML, CSS,
+                and JavaScript.
+              </p>
+            </div>
           </div>
         </div>
       </main>
