@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -27,45 +28,26 @@ export default function Home() {
         <div className="flex flex-col items-start justify-center w-full gap-4 mt-8">
           <h2 className="text-2xl font-bold">Work Experience</h2>
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-semibold">Software Engineer</h3>
-              <p className="text-sm text-gray-400">
-                Company A | Jan 2020 - Present
-              </p>
-              <ul className="list-disc list-inside text-sm">
-                <li>
-                  Developed and maintained web applications using React,
-                  Node.js, and MongoDB.
-                </li>
-                <li>
-                  Collaborated with cross-functional teams to design and
-                  implement new features.
-                </li>
-                <li>
-                  Optimized application performance and improved user
-                  experience.
-                </li>
-              </ul>
-            </div>
-            <div className="flex flex-col gap-2">
-              <h3 className="text-lg font-semibold">Frontend Developer</h3>
-              <p className="text-sm text-gray-400">
-                Company B | Jun 2018 - Dec 2019
-              </p>
-              <ul className="list-disc list-inside text-sm">
-                <li>
-                  Built responsive user interfaces using HTML, CSS, and
-                  JavaScript.
-                </li>
-                <li>
-                  Worked closely with designers to implement UI/UX designs.
-                </li>
-                <li>
-                  Participated in code reviews and contributed to team best
-                  practices.
-                </li>
-              </ul>
-            </div>
+            <Experience
+              title="Software Engineer"
+              company="Company A"
+              date="Jan 2020 - Present"
+              description={[
+                "Developed and maintained web applications using React, Node.js, and MongoDB.",
+                "Collaborated with cross-functional teams to design and implement new features.",
+                "Optimized application performance and improved user experience.",
+              ]}
+            />
+            <Experience
+              title="Frontend Developer"
+              company="Company B"
+              date="Jun 2018 - Dec 2019"
+              description={[
+                "Built responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
+                "Worked closely with designers to implement UI/UX designs.",
+                "Participated in code reviews and contributed to team knowledge sharing.",
+              ]}
+            />
           </div>
         </div>
       </main>
