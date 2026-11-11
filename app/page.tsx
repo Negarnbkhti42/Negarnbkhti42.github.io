@@ -32,20 +32,39 @@ export default function Home() {
               <p className="text-sm text-gray-400">
                 Company A | Jan 2020 - Present
               </p>
-              <p className="text-sm">
-                Worked on developing and maintaining web applications using
-                React and Node.js.
-              </p>
+              <ul className="list-disc list-inside text-sm">
+                <li>
+                  Developed and maintained web applications using React,
+                  Node.js, and MongoDB.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to design and
+                  implement new features.
+                </li>
+                <li>
+                  Optimized application performance and improved user
+                  experience.
+                </li>
+              </ul>
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-lg font-semibold">Frontend Developer</h3>
               <p className="text-sm text-gray-400">
                 Company B | Jun 2018 - Dec 2019
               </p>
-              <p className="text-sm">
-                Focused on building responsive user interfaces with HTML, CSS,
-                and JavaScript.
-              </p>
+              <ul className="list-disc list-inside text-sm">
+                <li>
+                  Built responsive user interfaces using HTML, CSS, and
+                  JavaScript.
+                </li>
+                <li>
+                  Worked closely with designers to implement UI/UX designs.
+                </li>
+                <li>
+                  Participated in code reviews and contributed to team best
+                  practices.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
