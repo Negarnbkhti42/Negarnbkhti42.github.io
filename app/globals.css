@@ -14,10 +14,15 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --inset-shadow-profile: 0 0 4px 4px var(--background) inset;
+  --color-gbd-bg: #12101f;
+  --color-gbd-surface: rgb(255 255 255 / 0.12);
+  --color-gbd-fg: #f2f0fa;
+  --color-gbd-rim: rgb(255 255 255 / 0.35);
+  --font-gbd-sans: 'Manrope', system-ui, sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
 }
