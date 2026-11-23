@@ -4,7 +4,7 @@ import Experience from "./components/Experience";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans bg-background">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-background sm:items-start">
+      <main className="flex flex-1 w-full max-w-6xl flex-col items-center justify-between py-32 px-16 bg-background sm:items-start">
         <div className="flex flex-col items-start justify-center w-full gap-4 md:flex-row md:items-start">
           <div className="bg-[url('/Headshot.png')] bg-cover inset-shadow-profile">
             <Image
@@ -27,7 +27,7 @@ export default function Home() {
         {/* work experiences */}
         <div className="flex flex-col items-start justify-center w-full gap-4 mt-8">
           <h2 className="text-2xl font-bold">Work Experience</h2>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-full">
             <Experience
               title="Software Engineer"
               company="Company A"
