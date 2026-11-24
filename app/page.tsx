@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Experience from "./components/Experience";
+import experiences from "./data/experiences.json";
 
 export default function Home() {
   return (
@@ -28,26 +29,9 @@ export default function Home() {
         <div className="flex flex-col items-start justify-center w-full gap-4 mt-8">
           <h2 className="text-2xl font-bold">Work Experience</h2>
           <div className="flex flex-col gap-4 w-full">
-            <Experience
-              title="Software Engineer"
-              company="Company A"
-              date="Jan 2020 - Present"
-              description={[
-                "Developed and maintained web applications using React, Node.js, and MongoDB.",
-                "Collaborated with cross-functional teams to design and implement new features.",
-                "Optimized application performance and improved user experience.",
-              ]}
-            />
-            <Experience
-              title="Frontend Developer"
-              company="Company B"
-              date="Jun 2018 - Dec 2019"
-              description={[
-                "Built responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
-                "Worked closely with designers to implement UI/UX designs.",
-                "Participated in code reviews and contributed to team knowledge sharing.",
-              ]}
-            />
+            {experiences.map((experience) => (
+              <Experience key={`${experience.company}-${experience.date}`} {...experience} />
+            ))}
           </div>
         </div>
       </main>

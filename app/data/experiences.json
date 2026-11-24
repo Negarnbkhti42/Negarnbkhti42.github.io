@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "Company A",
+    "date": "Jan 2020 - Present",
+    "description": [
+      "Developed and maintained web applications using React, Node.js, and MongoDB.",
+      "Collaborated with cross-functional teams to design and implement new features.",
+      "Optimized application performance and improved user experience."
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Company B",
+    "date": "Jun 2018 - Dec 2019",
+    "description": [
+      "Built responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
+      "Worked closely with designers to implement UI/UX designs.",
+      "Participated in code reviews and contributed to team knowledge sharing."
+    ]
+  }
+]
